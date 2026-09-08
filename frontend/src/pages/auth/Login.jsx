@@ -14,6 +14,7 @@ export default function Login() {
     if (error) setError(""); // clear error on typing
   };
 
+   
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -27,8 +28,11 @@ export default function Login() {
 
     try {
       // 🛠️ FIX 1: Set explicit backend URL if VITE_API_URL is missing
-      const backendBaseUrl =
-        import.meta.env.VITE_API_URL || "http://localhost:5000";
+    
+     
+      const backendBaseUrl = 
+
+        import.meta.env.VITE_API_URL || "https://blood-life-backend.onrender.com"; // Fallback to production URL
       const apiUrl = `${backendBaseUrl}/api/auth/login`;
 
       const res = await fetch(apiUrl, {

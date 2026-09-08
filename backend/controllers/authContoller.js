@@ -6,6 +6,7 @@ import jwt from "jsonwebtoken";
 
 /**
  * REGISTER (Unified)
+ * 
  */
 export const register = async (req, res) => {
   try {
