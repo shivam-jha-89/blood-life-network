@@ -70,6 +70,8 @@ function App() {
           <Route path="facilities" element={<GetAllFacilities />} />
         </Route>
       </Routes>
+
+      
   );
 }
 

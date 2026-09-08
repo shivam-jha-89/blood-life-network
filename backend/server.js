@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: ["http://localhost:5173", "http://localhost:5174"], // Allow both ports
+  origin: "https://dreamframe-frontend.onrender.com", // Allow both ports
   credentials: true,
 }));
 
